@@ -1,5 +1,5 @@
 *.zip
 /vendor/
 /node_modules/
-build/
-assets/dist/
+/build/
+/assets/dist
