@@ -4,9 +4,8 @@ namespace PluginStarterTemplate\Shortcode;
 
 use Kucrut\Vite;
 
-function bootstrap()
+function register()
 {
-    add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_script');
     add_shortcode('plugin-starter-template2', __NAMESPACE__ . '\\render_shortcode');
 }
 
@@ -30,10 +29,12 @@ function enqueue_script(): void
  */
 function render_shortcode()
 {
+    enqueue_script();
+
     ob_start();
 ?>
     <div id="my-app" class="my-app">
-        <h2>Hello from Vite!</h2>
+        <h2>Hello from PluginStarterTemplate!</h2>
         <button type="button">Count is <span>0</span></button>
     </div>
 <?php

@@ -41,6 +41,6 @@ register_activation_hook(__FILE__, __NAMESPACE__ . "\\handle_deactivation_hook")
 
 /* SHORTCODE */
 
-Shortcode\bootstrap();
+Shortcode\register();
 
 /* SHORTCODE */
