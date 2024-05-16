@@ -1,0 +1,15 @@
+{
+  "name": "acerohernan/plugin-starter-template",
+  "description": "Plugin development starter template made by Hernan Acero",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hernan Acero"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "kucrut/vite-for-wp": "^0.8.0"
+  }
+}
